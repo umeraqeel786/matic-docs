@@ -93,6 +93,44 @@ Default address: `0.0.0.0:8545`.
 
 ---
 
+<h4><i>json-rpc-block-range-limit</i></h4>
+
+<Tabs>
+  <TabItem value="syntax" label="Syntax" default>
+
+    server [--json-rpc-block-range-limit BLOCK_RANGE]
+
+  </TabItem>
+  <TabItem value="example" label="Example">
+
+    server --json-rpc-block-range-limit 1500
+
+  </TabItem>
+</Tabs>
+
+Sets the maximum block range to be considered when executing json-rpc requests that include fromBlock/toBlock values (e.g. eth_getLogs). Default:`1000`.
+
+---
+
+<h4><i>json-rpc-batch-request-limit</i></h4>
+
+<Tabs>
+  <TabItem value="syntax" label="Syntax" default>
+
+    server [--json-rpc-batch-request-limit MAX_LENGTH]
+
+  </TabItem>
+  <TabItem value="example" label="Example">
+
+    server --json-rpc-batch-request-limit 50
+
+  </TabItem>
+</Tabs>
+
+Sets the maximum length to be considered when handling json-rpc batch requests. Default: `20`.
+
+---
+
 <h4><i>grpc</i></h4>
 
 <Tabs>
@@ -525,26 +563,6 @@ Restore blocks from the specified archive file
 </Tabs>
 
 Sets block production time in seconds. Default: `2`
-
----
-
-<h4><i>ibft-base-timeout</i></h4>
-<Tabs>
-  <TabItem value="syntax" label="Syntax" default>
-
-    server [--ibft-base-timeout IBFT_BASE_TIMEOUT]
-
-  </TabItem>
-  <TabItem value="example" label="Example">
-
-    server --ibft-base-timeout 10
-
-  </TabItem>
-</Tabs>
-
-Sets the base value of timeout on IBFT consensus.  
-IBFT consensus timeout is calculated by `BaseTimeout + 2^(round)`, or `BaseTimeout * 30` where round exceeds 8.  
-It needs to be larger than block time and `BlockTime * 5` is set if it's not specified.
 
 ---
 

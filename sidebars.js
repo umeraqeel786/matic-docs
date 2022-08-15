@@ -972,6 +972,7 @@ module.exports = {
               "edge/get-started/set-up-ibft-on-the-cloud",
               "edge/get-started/cli-commands",
               "edge/get-started/json-rpc-commands",
+              "edge/get-started/terraform-aws-deployment",
           ]
       },
       {
@@ -1080,16 +1081,6 @@ module.exports = {
                       "edge/architecture/modules/other-modules"
                   ]
               }
-          ]
-      },
-      {
-          type: "category",
-          label: "Concepts",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-              "edge/concepts/ethereum-state"
           ]
       },
       {
