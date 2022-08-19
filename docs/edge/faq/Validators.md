@@ -46,3 +46,8 @@ PoA is the default consensus mechanism. For a new cluster, to switch to PoS, you
 
 You can find a detailed guide on how to do this procedure [here](/docs/edge/validator-hosting#update).
 
+## Is the minimum staking amount configurable for PoS Edge? 
+
+The minimum staking amount by is `1 ETH` by default, and it’s not configurable. However, there is a workaround: you can manually edit the `validator_treshold` value and compile a staking contract. 
+
+
