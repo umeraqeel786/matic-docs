@@ -125,7 +125,7 @@ module.exports = {
         "develop/wallets/walletconnect",
         {
           type: "category",
-          label: "Polygon Web Wallet",
+          label: "Polygon Wallet Suite",
           link: {
             type: "generated-index",
           },
@@ -523,12 +523,8 @@ module.exports = {
             type: "generated-index",
           },
           items: [
-            "develop/the-graph",
-            {
-              type: "link",
-              label: "Covalent",
-              href: "https://www.covalenthq.com/docs/api/",
-            },
+            "develop/data/the-graph",
+            "develop/data/covalent",
           ],
         },
         "develop/dapp-fauna-polygon-react",
@@ -883,6 +879,7 @@ module.exports = {
         type: "generated-index",
       },
       items: [
+        "nightfall/deployments/versions",
         "nightfall/deployments/mainnet",
         "nightfall/deployments/testnet",
       ],
@@ -903,23 +900,12 @@ module.exports = {
           items: [
             "nightfall/protocol/actors",
             "nightfall/protocol/contracts",
-            "nightfall/protocol/circuits",
             "nightfall/protocol/commitments",
             "nightfall/protocol/secrets",
+            "nightfall/protocol/circuits",
             "nightfall/protocol/protocol"
           ]
         },
-        {
-          type: "category",
-          label: "Proposers & Challengers",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "nightfall/protocol/proposers",
-            "nightfall/protocol/challengers"
-          ]
-        }
       ]
     },
     {
@@ -929,7 +915,9 @@ module.exports = {
         type: "generated-index",
       },
       items: [
-        "nightfall/tools/nightfall-wallet"
+        "nightfall/tools/nightfall-wallet",
+        "nightfall/tools/explorer",
+        "nightfall/tools/nightfall-sdk"
       ]
     },
     "nightfall/faq/faq",
@@ -942,7 +930,7 @@ module.exports = {
       "faq/commit-chain-multisigs",
       "maintain/delegate/delegator-faq",
       "maintain/validate/faq/validator-faq",
-      // "faq/staking-tutorials",
+      "faq/staking-faq",
       {
         type: "category",
         label: "Wallet FAQs",
@@ -1113,7 +1101,7 @@ module.exports = {
                       "edge/performance-reports/test-history/test-2022-03-23",
                       "edge/performance-reports/test-history/test-2022-03-02",
                       "edge/performance-reports/test-history/test-2022-01-21",
-        
+
                   ]
               }
           ]

@@ -1,3 +1,6 @@
+const math = require('remark-math');
+const katex = require('rehype-katex');
+
 module.exports = {
   title: "Polygon Technology | Documentation",
   tagline: "Welcome to Polygon developer documentation",
@@ -90,7 +93,7 @@ module.exports = {
           {
             to: '/docs/develop/wallets/getting-started',
             from: '/docs/develop/cexs-wallets/cexs',
-          },
+          }
         ],
         createRedirects: function (existingPath) {
           if (existingPath.startsWith('/docs/validate/')) {
@@ -309,7 +312,7 @@ module.exports = {
           position: "right",
           items: [
                   {
-                    href: 'https://discord.gg/tCmCbEff66',
+                    href: 'https://discord.com/invite/0xPolygon',
                     label: 'Discord',
                     target: '_blank',
                     rel: null,
@@ -426,6 +429,8 @@ module.exports = {
           path: "docs",
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
