@@ -173,6 +173,8 @@ You can either follow the video tutorial or follow the step-by-step guide.
 </video>
 :::
 
+### Step-by-step guide
+
 Withdrawing funds from Polygon back to the Ethereum mainnet via Plasma Bridge is a 3-step process but with a caveat, the challenge period.
 
 To withdraw funds, click on the ‘Withdraw’ link from any of the Plasma token type on ‘Your tokens on Polygon Mainnet’ section.
